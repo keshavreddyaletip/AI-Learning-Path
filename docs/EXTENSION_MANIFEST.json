@@ -1,0 +1,14 @@
+{
+  "base_archive": "submission_1.zip",
+  "extension": "Standout frontend layer",
+  "changes": [
+    "Added frontend/src/standoutExtension.jsx",
+    "Added localStorage-based completion and quiz score memory in App.jsx",
+    "Added Learning Snapshot, ProgressBar, ScoreCard and ExplainableRecommendation components",
+    "Added CSS for the new UI",
+    "Added docs/STANDOUT_FEATURES.md",
+    "Extended README with run/deployment notes",
+    "Original key files backed up under docs/original_submission_backup/"
+  ],
+  "important_note": "This is an additive prototype extension. Verify the UI locally before deployment."
+}

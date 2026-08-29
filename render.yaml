@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ai-learning-path-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: AI_API_KEY
+        sync: false
+      - key: YOUTUBE_API_KEY
+        sync: false
+      - key: AI_MODEL
+        value: gemini-3.6-flash
+      - key: FRONTEND_ORIGINS
+        value: http://localhost:5173,https://ai-learning-path-inky.vercel.app
